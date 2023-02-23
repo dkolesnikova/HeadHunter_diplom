@@ -10,6 +10,7 @@ public class MainPage {
             aboutCompanyLink = $x("//*[@href=\"/article/28?from=footer_new\"]"),
             vkIcon = $(".bloko-social-icon_vk"),
             dzenIcon  = $(".bloko-social-icon_dzen"),
+            telegramIcon = $(".bloko-social-icon_telegram"),
             searchField = $(".bloko-input-text"),
             stateButton = $(".supernova-navi-item_area-switcher-button"),
             employersButton = $(".supernova-link_dimmed");
@@ -35,6 +36,12 @@ public class MainPage {
     public MainPage clickDzenIcon () {
         step("Click on Dzen icon", () -> {
             dzenIcon.click();
+        });
+        return this;
+    }
+    public MainPage clickTelegramIcon () {
+        step("Click on Telegram icon", () -> {
+            telegramIcon.click();
         });
         return this;
     }

@@ -20,4 +20,11 @@ public class OpenMessengerPage {
         });
         return this;
     }
+    public OpenMessengerPage checkTelegramIconResult () {
+        step("Switch to new page and check URL", () -> {
+            switchTo().window(1);
+            webdriver().shouldHave(url("https://t.me/hh_ru_official"));
+        });
+        return this;
+    }
 }

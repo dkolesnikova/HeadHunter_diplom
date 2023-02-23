@@ -1,6 +1,7 @@
 package ru.hh.web.tests;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.hh.web.pages.ChangeSearchModePage;
 import ru.hh.web.pages.MainPage;
@@ -10,6 +11,7 @@ public class ChangeSearchModeTest extends TestBase {
     ChangeSearchModePage changeSearchModePage = new ChangeSearchModePage();
 
     String textChangePageTitle = "Разместить вакансию";
+    @Tag("UI")
     @Test
     @DisplayName("Проверка изменения страницы соискателям на страницу для работодателей")
     void checkChangePageTest() {
