@@ -9,7 +9,6 @@ import ru.hh.web.pages.MainPage;
 public class ChangeSearchModeTest extends TestBase {
     MainPage mainPage = new MainPage();
     ChangeSearchModePage changeSearchModePage = new ChangeSearchModePage();
-
     String textChangePageTitle = "Разместить вакансию";
     @Tag("UI")
     @Test

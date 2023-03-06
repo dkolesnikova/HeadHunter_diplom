@@ -6,13 +6,12 @@ import org.junit.jupiter.api.Test;
 import ru.hh.web.pages.JobSearchPage;
 import ru.hh.web.pages.MainPage;
 
-@Tag("UI")
 public class JobSearchTest extends TestBase {
     MainPage mainPage = new MainPage();
     JobSearchPage jobSearchPage = new JobSearchPage();
-
     String textJobTitle = "QA инженер";
 
+    @Tag("UI")
     @Test
     @DisplayName("Проверка поиска вакансии")
     void checkJobSearchTest () {

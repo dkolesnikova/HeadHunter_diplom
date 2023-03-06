@@ -9,7 +9,6 @@ import ru.hh.web.pages.MainPage;
 public class ChangeCityTest extends TestBase{
     MainPage mainPage = new MainPage();
     ChangeCityPage changeCityPage = new ChangeCityPage();
-
     @Tag("UI")
     @Test
     @DisplayName("Изменение города")

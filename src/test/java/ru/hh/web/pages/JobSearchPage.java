@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
 public class JobSearchPage {
-
     SelenideElement jobTitle = $(".bloko-header-section-3");
 
     public JobSearchPage checkFindJob (String textJobTitle) {

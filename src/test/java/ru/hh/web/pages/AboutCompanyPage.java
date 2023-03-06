@@ -7,7 +7,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
 public class AboutCompanyPage {
-
     private SelenideElement aboutCompanyPageTitle = $(".promo-page-h2");
 
     public AboutCompanyPage checkAboutCompanyResult (String textAboutCompanyTitle) {

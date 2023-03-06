@@ -9,7 +9,6 @@ import ru.hh.web.pages.MainPage;
 public class AboutCompanyTest extends TestBase {
     MainPage mainPage = new MainPage();
     AboutCompanyPage aboutCompanyPage = new AboutCompanyPage();
-
     String textAboutCompanyTitle = "О КОМПАНИИ";
 
     @Tag("UI")

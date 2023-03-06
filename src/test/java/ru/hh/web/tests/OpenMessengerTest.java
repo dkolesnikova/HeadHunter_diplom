@@ -6,11 +6,10 @@ import org.junit.jupiter.api.Test;
 import ru.hh.web.pages.MainPage;
 import ru.hh.web.pages.OpenMessengerPage;
 
-@Tag("UI")
 public class OpenMessengerTest extends TestBase{
     MainPage mainPage = new MainPage();
     OpenMessengerPage openMessengerPage = new OpenMessengerPage();
-
+    @Tag("UI")
     @Test
     @DisplayName("Проверка открытия страницы ВК")
     void checkOpeningVKTest() {
@@ -18,6 +17,8 @@ public class OpenMessengerTest extends TestBase{
                 .clickVKIcon();
         openMessengerPage.checkVKIconResult();
     }
+
+    @Tag("UI")
     @Test
     @DisplayName("Проверка открытия страницы Дзен")
     void checkOpeningDzenTests () {
@@ -25,6 +26,8 @@ public class OpenMessengerTest extends TestBase{
                 .clickDzenIcon();
         openMessengerPage.checkDzenIconResult();
     }
+
+    @Tag("UI")
     @Test
     @DisplayName("Проверка открытия страницы Телеграм")
     void checkOpeningTelegramTests () {

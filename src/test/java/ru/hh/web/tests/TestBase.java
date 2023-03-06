@@ -7,8 +7,6 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import ru.hh.web.pages.ChangeCityPage;
-
 
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
@@ -24,6 +22,7 @@ public class TestBase {
         open(baseUrl);
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
+
     @AfterEach
     void addAttachments() {
         Attach.screenshotAs("Last screenshot");
